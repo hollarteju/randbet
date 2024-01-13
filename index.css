@@ -167,7 +167,7 @@
     border-radius: 25px;
     background: var(--white);
     padding-block: 2rem;
-    padding-inline: 100px;
+    padding-inline: 50px;
     margin-top: 12rem;
 }
 
@@ -211,10 +211,7 @@
     align-items: center;
 }
 
-#header-content-2{
-    gap: 0.9rem;
-    padding-inline: 0.1rem;
-}
+
 
 .instruction-list-box .header span{
     padding: 0.5rem;
