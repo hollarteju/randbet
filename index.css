@@ -23,6 +23,7 @@
     background-color: var(--green_bg);
     position: relative;
     border-top: 1px solid var(--green_text);
+    overflow: visible !important;
 }
 
 .nav{
@@ -55,6 +56,14 @@
     gap: 1rem;
     font-size: 20px;
     font-weight: 500;
+}
+
+.nav-active{
+    display: flex !important;
+}
+
+.nav ul li a{
+    color: var(--black);
 }
 
 .nav ul li{
@@ -104,6 +113,7 @@
     height: 822px;
     background-color: var(--green_bg);
     background-image: url("home-header-bg.png");
+    overflow: visible !important;
 }
 
 .home-headline-container h1{
@@ -533,7 +543,12 @@
 }
 
 
-@media screen and (max-width:769px) {
+@media screen and (max-width:809px) {
+
+    .nav{
+        overflow: visible !important;
+    }
+    
     .nav p{
         font-size: 25px !important;
     }
@@ -541,7 +556,18 @@
     .nav ul{
         font-size: 16px;
         display: none;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: var(--white);
+        position: absolute;
+        right: 0.3rem;
+        top: 4.1rem;
+        padding-inline: 1rem;
+        padding-block: 2rem;
+        border-radius: 1rem;
     }
+
+   
 
     .nav i{
         display: block;
@@ -551,6 +577,7 @@
     .home-headline-container h1{
         font-size: 65px;
         padding-inline: 60px;
+        padding-top: 20rem;
     }
 
     .play-option-container h2, .instruction-container h2{
@@ -688,13 +715,19 @@
 }
 
 @media screen and (max-width:429px) {
+
+    
     .nav p{
         font-size: 18px !important;
     }
 
     .nav ul{
         font-size: 16px;
-        display: none;
+    }
+
+    .nav ul li a,.nav ul li{
+        font-size: 12px;
+
     }
 
     .home-headline-container h1{
