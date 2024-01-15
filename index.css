@@ -878,6 +878,10 @@
 
 
 @media screen and (max-width:399px) {
+    .nav{
+        padding-inline: 1rem;
+    }
+
     .features{
         height: 275px;
 
@@ -892,6 +896,8 @@
 }
 
 @media screen and (max-width:369px) {
+   
+
     .features{
         height: 253px;
 
@@ -904,11 +910,9 @@
     }
 }
 
-@media screen and (max-width:369px) {
+@media screen and (max-width:330px) {
 
-    .nav{
-        padding-inline: 1rem;
-    }
+    
     .features{
         height: 223px;
 
