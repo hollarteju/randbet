@@ -15,6 +15,9 @@
     box-sizing: border-box;
     list-style: none;
     font-family: "Roboto Slab";
+}
+
+body{
     overflow-x: hidden;
 }
 
@@ -183,6 +186,7 @@
 
 .play-option-container form{
     padding-top: 8rem;
+    
     display: inline-flex;
     flex-direction: column;
     gap: 5rem;
@@ -193,6 +197,7 @@
 
 .play-option-container form input{
     outline: none;
+    
     border: none;
     border-bottom: var(--white) 2px solid;
     background-color: transparent;
@@ -205,7 +210,8 @@
 
 
 .play-option-container form input::placeholder{
-    color: rgba(255, 255, 255, 0.50);
+    color: rgba(255, 255, 
+    255, 0.50);
     font-family: "Raleway";
     font-size: 32px;
     font-weight: 400;   
@@ -213,6 +219,7 @@
 
 .play-option-container form button{
     width: fit-content;
+    
     padding: 33px 120px;
     border-radius: 10px;
     border: 2px solid var(--green_text);
@@ -228,6 +235,7 @@
 .instruction-container{
     width: 100%;
     height: fit-content;
+
     border-radius: 25px;
     background: var(--white);
     padding-block: 2rem;
@@ -252,7 +260,7 @@
 
 .instruction-list-container{
     margin-top: 100px;
-    display: block;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 26px;
     padding-inline: 3rem;
@@ -362,8 +370,8 @@
     background: var(--green_text);
     align-items: center;
     justify-content: center;
-    position: relative;
     overflow-x: visible;
+    position: relative;
 }
 
 .experience-content{
@@ -371,7 +379,7 @@
     padding-block: 10px;
     border-radius: 15px;
     background: var(--white);
-    position: absolute;
+    position: absolute !important;
     top: 40px;
     left: -50px;
     align-items: center;
@@ -557,11 +565,13 @@
 
     .play-option-container form input{
         width: 600px;
+        
         font-size: 25px;
     }
 
     .play-option-container ul,.play-option-container form input::placeholder{
         font-size: 25px;
+        
     }
 
     .play-option-container ul li{
@@ -570,6 +580,7 @@
 
     .play-option-container form button{
         width: fit-content;
+        
         padding: 28px 100px;
         font-size: 26px;
     }
@@ -694,7 +705,7 @@
     }
 
     .play-option-container,.instruction-container{
-        padding-inline: 40px;
+        padding-inline: 20px;
     }
 
     .play-option-container h2, .instruction-container h2{
@@ -703,6 +714,11 @@
 
     .play-option-container p, .instruction-container p{
         font-size: 15px;
+    }
+
+    .play-option-container form{
+        padding-top: 3rem;
+        gap: 2rem;
     }
 
     .play-option-container form input{
@@ -723,10 +739,12 @@
         width: fit-content;
         padding: 18px 60px;
         font-size: 16px;
+
     }
 
     .instruction-container{
         padding-inline: 1rem;
+        margin-top: 2rem;
        
     }
 
@@ -751,6 +769,7 @@
         align-items: center !important;
         justify-content: center !important;
         justify-items: center !important;
+        gap: 0rem;
     }
     
     .experience-container h2{
@@ -785,6 +804,11 @@
 
     .join-community-container{
         padding-inline: 40px;
+
+    }
+
+    .join-community-layer{
+        gap: 40px;
     }
     
     .join-community-layer h2{
@@ -838,7 +862,7 @@
     }
 
     .features{
-        height: 290px;
+        height: 275px;
 
     }
 
