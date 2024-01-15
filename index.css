@@ -15,6 +15,7 @@
     box-sizing: border-box;
     list-style: none;
     font-family: "Roboto Slab";
+    overflow-x: hidden;
 }
 
 .nav-container{
@@ -39,6 +40,10 @@
     font-size: 32px;
     font-weight: 400;
     cursor: pointer;
+}
+
+.nav i{
+    display: none
 }
 
 
@@ -358,6 +363,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow-x: visible;
 }
 
 .experience-content{
@@ -528,6 +534,12 @@
 
     .nav ul{
         font-size: 16px;
+        display: none;
+    }
+
+    .nav i{
+        display: block;
+        font-size: 20px;
     }
 
     .home-headline-container h1{
@@ -545,6 +557,7 @@
 
     .play-option-container form input{
         width: 600px;
+        font-size: 25px;
     }
 
     .play-option-container ul,.play-option-container form input::placeholder{
@@ -661,6 +674,181 @@
     #home-page footer{
         display: block;
     
+    }
+}
+
+@media screen and (max-width:769px) {
+    .nav p{
+        font-size: 18px !important;
+    }
+
+    .nav ul{
+        font-size: 16px;
+        display: none;
+    }
+
+    .home-headline-container h1{
+        font-size: 45px;
+        padding-inline: 40px;
+    }
+
+    .play-option-container,.instruction-container{
+        padding-inline: 40px;
+    }
+
+    .play-option-container h2, .instruction-container h2{
+        font-size: 28px;
+    }
+
+    .play-option-container p, .instruction-container p{
+        font-size: 15px;
+    }
+
+    .play-option-container form input{
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .play-option-container ul,.play-option-container form input::placeholder{
+        font-size: 15px;
+        gap: 1.5rem;
+    }
+
+    .play-option-container ul li{
+        padding: 1rem;
+    }
+
+    .play-option-container form button{
+        width: fit-content;
+        padding: 18px 60px;
+        font-size: 16px;
+    }
+
+    .instruction-container{
+        padding-inline: 1rem;
+       
+    }
+
+    .instruction-list-container{
+        display: block;
+        gap: 16px;
+        padding-inline: 0rem;
+    }
+
+    .instruction-list-box .header span, .instruction-list-box .header h6{
+        font-size: 15px;
+        padding-inline: 1rem;
+    
+    }
+
+    .instruction-list-box .content p{
+        font-size: 12px;
+    }
+
+    .experience-container{
+        padding-inline: 40px;
+        align-items: center !important;
+        justify-content: center !important;
+        justify-items: center !important;
+    }
+    
+    .experience-container h2{
+        font-size: 28px;
+    }
+    
+    .experience-container p{
+        font-size: 15px;
+    }
+
+    .board{
+        width: 250px;
+        height: 130px;
+        margin-left: 2rem;
+
+    }
+    
+    .experience-content{
+        width: 308px;
+        padding-block: 10px;
+        left: -30px;
+    }
+    
+    .experience-content img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .experience-content span{
+        font-size: 15px;
+    }
+
+    .join-community-container{
+        padding-inline: 40px;
+    }
+    
+    .join-community-layer h2{
+        font-size: 30px;
+    }
+    
+    .join-community-layer p{
+        font-size: 15px;
+    }
+    
+    .content-board{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .content-board .content-layer{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+
+    
+    .content-layer .content img{
+        width: 28px;
+        height: 28px;
+    }
+    
+    .content-layer .content span{
+        font-size: 15px;
+    }
+    
+    .social-handle-connect{
+        padding-left: 0px;
+    }
+    
+    .social-handle-connect p{
+        font-size: 15px;
+    }
+    
+    .social-handle-connect .icons{
+        display: flex;
+        gap: 45px;
+    }
+    
+    .social-handle-connect .icons a img{
+        width: 25px;
+        height: 25px;
+        
+    }
+
+    .features{
+        height: 290px;
+
+    }
+
+    #home-page footer{
+        display: block;
+        padding-inline: 40px;
+    
+    }
+
+    footer div h4,footer div p, footer div a{
+        font-size: 15px;
     }
 }
 
