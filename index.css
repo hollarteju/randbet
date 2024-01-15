@@ -689,7 +689,7 @@ body{
     }
 }
 
-@media screen and (max-width:412px) {
+@media screen and (max-width:429px) {
     .nav p{
         font-size: 18px !important;
     }
@@ -862,13 +862,14 @@ body{
     }
 
     .features{
-        height: 275px;
+        height: 300px;
 
     }
 
     #home-page footer{
         display: block;
         padding-inline: 40px;
+        padding-block: 1.5rem;
     
     }
 
@@ -878,16 +879,29 @@ body{
 }
 
 
-/* .nav ul li:nth-child(1){
-    border: 1px solid var(--green_text);
-    color: var(--green_text);
-    border-radius: 1rem;
+@media screen and (max-width:399px) {
+    .features{
+        height: 275px;
+
+    }
 }
 
-.nav ul li:nth-child(2){
-    border: 1px solid var(--green_text);
-    color: var(--white);
-    background-color: var(--green_text);
-    border-radius: 1rem;
-} */
+@media screen and (max-width:379px) {
+    .features{
+        height: 265px;
 
+    }
+}
+
+@media screen and (max-width:369px) {
+    .features{
+        height: 253px;
+
+    }
+
+    .instruction-list-box .header span, .instruction-list-box .header h6{
+        font-size: 12px;
+        padding-inline: 1rem;
+    
+    }
+}
