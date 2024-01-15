@@ -597,6 +597,7 @@
 
     .experience-list-container{
         display: block;
+        overflow: visible;
     
     }
     
@@ -677,7 +678,7 @@
     }
 }
 
-@media screen and (max-width:769px) {
+@media screen and (max-width:412px) {
     .nav p{
         font-size: 18px !important;
     }
