@@ -369,6 +369,7 @@
     width: 400px;
     align-items: center;
     margin-bottom: 180px;
+    overflow: visible !important;
 }
 
 .board{
@@ -378,7 +379,7 @@
     background: var(--green_text);
     align-items: center;
     justify-content: center;
-    overflow-x: visible !important;
+    overflow: visible !important;
     position: relative;
 }
 
