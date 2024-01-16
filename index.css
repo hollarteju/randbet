@@ -718,7 +718,7 @@ color: var(--white);
     .home-headline-container h1{
         font-size: 65px;
         padding-inline: 60px;
-        padding-top: 20rem;
+        padding-top: 15rem;
     }
 
     .play-option-container h2, .instruction-container h2{
@@ -1100,18 +1100,19 @@ color: var(--white);
     
     
     .input-container{
-        gap: 1rem;
+        gap: 1.3rem;
         font-family: "Raleway";
         align-items: center;
         justify-content: center;
     }
     
     .input-layer{
-        gap: 15px;
+        gap: 18px;
     }
 
     .input-layer input{
         width: 350px !important;
+        font-size: 15px;
     }
 
     .input-layer .input input{
@@ -1120,6 +1121,12 @@ color: var(--white);
 
     .input-layer .input span{
         width: 100px;
+        padding-block: 14px;
+        font-size: 15px;
+    }
+
+    .register button{
+        font-size: 15px;
     }
     
 
