@@ -18,6 +18,14 @@
     overflow-x: hidden;
 }
 
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
 
 .nav-container{
     background-color: var(--green_bg);
@@ -77,33 +85,33 @@
     opacity: 0.5;
 }
 
-#login-btn li{
+#login li{
     padding-inline: 12px;
     text-align: center;
     display: flex;
     border-radius: 0.5rem;
 }
 
-#login-btn li:nth-child(2){
+#login li:nth-child(2){
     border: 1px var(--green_text) solid;
     color: var(--green_text);
 }
 
-#login-btn li:nth-child(3){
+#login li:nth-child(3){
     border: 1px var(--green_text) solid;
     background-color: var(--green_text);
     color: var(--white);
 }
 
-#demo-btn{
+#demo{
     display: none;
 }
 
-.demo-btn{
+.demo{
     display: flex !important;
 }
 
-.login-btn-disable{
+.login-disable{
     display: none !important;
 }
 
@@ -543,15 +551,15 @@
     
 }
 
-.register{
+.register, .login{
     position: fixed !important;
     top: 0;
     width: 100%;
     height: fit-content;
-    padding-block: 30px;
+    padding-block: 45px;
     padding-inline: 90px;
     background-color: var(--white);
-    display: none;
+    display:none;
     flex-direction: column;
     gap: 3rem;
     align-items: center;
@@ -563,7 +571,7 @@
     display: flex !important;
 }
 
-#canceal-btn{
+#canceal-btn, #login-x{
     position: absolute;
     right: 3rem;
     font-size: 24px;
@@ -681,10 +689,21 @@ background: rgba(0, 0, 0, 0.85);
 color: var(--white);
 }
 
+#login-pg{
+    padding-block: 150px !important;
+    background-image: url("home-header-bg.png");
+    background-size: cover;
+}
+
+#login-pg button{
+    width: 270px;
+}
 
 
 
-@media screen and (max-width:809px) {
+
+
+@media screen and (max-width:835px) {
 
     .nav{
         overflow: visible !important;
@@ -877,6 +896,12 @@ color: var(--white);
     
     .input-layer{
         gap: 30px;
+    }
+
+    #login-pg{
+        padding-top: 300px !important;
+        padding-bottom: 750px !important;
+        background-repeat: no-repeat;
     }
     
 }
@@ -1075,7 +1100,7 @@ color: var(--white);
         font-size: 15px;
     }
 
-    .register{
+    .register, .login{
         gap: 2rem;
         padding-top: 3rem;
     }
@@ -1115,6 +1140,8 @@ color: var(--white);
         font-size: 15px;
     }
 
+    
+
     .input-layer .input input{
         width: 250px !important;
     }
@@ -1127,6 +1154,22 @@ color: var(--white);
 
     .register button{
         font-size: 15px;
+    }
+
+    #login-pg{
+        padding-top: 200px !important;
+    }
+
+    .login .input-layer input{
+        width: 350px !important;
+    }
+
+    .login{
+        padding-inline: 0 !important;
+    }
+
+    .login .input-layer{
+        align-self: center !important;
     }
     
 
@@ -1230,5 +1273,13 @@ color: var(--white);
         width: 100px;
         font-size: 15px;
         padding-block: 0.9rem;
+    }
+
+    .login .input-layer input{
+        width: 300px !important;
+    }
+
+    #login-pg{
+        padding-block: 100px !important;
     }
 }
