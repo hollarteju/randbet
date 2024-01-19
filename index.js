@@ -15,10 +15,10 @@ document.getElementById("canceal-btn").addEventListener("click", function(){
 })
 
 document.getElementById("login-btn").addEventListener("click", function(){
-    document.getElementById("login-pg").classList.add("register-activate")
+    document.getElementById("login-pg").classList.add("login-activate")
 })
 
 document.getElementById("login-x").addEventListener("click", function(){
-    document.getElementById("login-pg").classList.remove("register-activate");
+    document.getElementById("login-pg").classList.remove("login-activate");
     document.getElementById("login").classList.remove("nav-active");
 })
