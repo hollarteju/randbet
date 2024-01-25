@@ -3,9 +3,19 @@ const resister_btn = document.getElementById("register-btn")
 
 
 document.getElementById("menu-btn").addEventListener("click", function(){
-    // document.getElementById("home-headline").classList.add("landpage-headline-container");
-    // document.getElementById("demo").classList.add("demo");
-    document.getElementById("login").classList.toggle("nav-active");
+    
+    document.getElementById("nav-list").classList.toggle("nav-active");
+
+})
+
+document.getElementById("auth").addEventListener("click", function(){
+    document.getElementById("home-headline").classList.add("landpage-headline-container");
+    document.getElementById("demo").classList.add("demo");
+    document.getElementById("login").style.display = "none"
+    document.getElementById("home-headline").classList.add("landpage-headline-container");
+    document.getElementById("demo").classList.add("demo");
+    document.getElementById("login-pg").classList.remove("login-activate");
+    document.getElementById("login").classList.remove("nav-active");
 
 })
 
