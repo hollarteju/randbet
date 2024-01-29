@@ -12,8 +12,6 @@ document.getElementById("auth").addEventListener("click", function(){
     document.getElementById("home-headline").classList.add("landpage-headline-container");
     document.getElementById("demo").classList.add("demo");
     document.getElementById("login").style.display = "none"
-    document.getElementById("home-headline").classList.add("landpage-headline-container");
-    document.getElementById("demo").classList.add("demo");
     document.getElementById("login-pg").classList.remove("login-activate");
     document.getElementById("login").classList.remove("nav-active");
 

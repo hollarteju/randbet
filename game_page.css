@@ -1,0 +1,10 @@
+.game-page-header{
+    width: 100%;
+    height: 670px;
+    background-color: var(--green_bg) !important;
+    background-image: url("./images/Group.png");
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-size: contain;
+    overflow: visible;
+}
